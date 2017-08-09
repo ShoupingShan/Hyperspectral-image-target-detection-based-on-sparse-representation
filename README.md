@@ -9,5 +9,4 @@
   * [OpenCV 2.4.10](http://opencv.org/)
 
 ## Contact Us
-
-    *shp395210@outlook.com*
+  *shp395210@outlook.com*
