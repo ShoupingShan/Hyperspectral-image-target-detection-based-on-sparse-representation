@@ -63,9 +63,9 @@ However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.
 |Test|57|9943|10000|0.9989|
 
 ### Fisher
-####1. Using part of data
+####1. Using all of data
 ![All](http://thumbnail0.baidupcs.com/thumbnail/8d8ce8444ae605283cd97f2e12475ae8?fid=676888674-250528-829920072955848&time=1502348400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-O1dIBpflwHs6iHYriLiCTJGPT24%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5140435538473245919&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
-####2. Using all of the data
+####2. Using part of the data
 ![Part](http://thumbnail0.baidupcs.com/thumbnail/cf38d0d2e1b1301d6b8f4d11845b82da?fid=676888674-250528-738259958850869&time=1502348400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-aYzIFV%2B6h4LpoMIDh3bgHXNOcVQ%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5140435538473245919&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
 ## ROC curve
   ![ROC](http://thumbnail0.baidupcs.com/thumbnail/8edd40996220e095e1e1825f0bd9cc3b?fid=676888674-250528-890559091439224&time=1502330400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-T4dYhf2kACwxpMPHiiBec5uUdas%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5135414757900587264&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
