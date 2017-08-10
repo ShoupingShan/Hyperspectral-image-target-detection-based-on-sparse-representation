@@ -57,6 +57,11 @@ However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.
 ### SVM
   ![SVM](http://thumbnail0.baidupcs.com/thumbnail/092d2cf20215013d362f4dd787ea454a?fid=676888674-250528-779354715831614&time=1502337600&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-2FbEHEYypxbyES4UKZU54XogVl4%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5137387434532715500&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)
 
+|  |Positive|Negative|Totle|Accuracy|
+|:-:|:-----:|:------:|:---:|:------:|
+|Train|37|6629|6666||
+|Test|57|9943|10000|0.9989|
+
 ## ROC curve
   ![ROC](http://thumbnail0.baidupcs.com/thumbnail/8edd40996220e095e1e1825f0bd9cc3b?fid=676888674-250528-890559091439224&time=1502330400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-T4dYhf2kACwxpMPHiiBec5uUdas%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5135414757900587264&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
 ## Platform
