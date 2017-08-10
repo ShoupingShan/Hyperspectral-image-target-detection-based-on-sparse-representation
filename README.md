@@ -78,12 +78,12 @@ However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.
 ## How to run
   > For Sparse Representation
 
-      mat\detect.m
+      mat/detect.m
   > For SVM
 
-      svm\main.cpp
+      svm/main.cpp
   > For Fisher_part
-  
+
       fisher/fisher.cpp
   > For Fisher_all
 
