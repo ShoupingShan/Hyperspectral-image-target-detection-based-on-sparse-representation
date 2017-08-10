@@ -21,7 +21,7 @@ The problem of target detection can be regarded as a competitive relationship of
 
 ![](http://latex.codecogs.com/gif.latex?%24%24%5Cbegin%7Baligned%7Dn_0%20%26%20%3Dx-B%5Calpha_b%3D%28I-P_B%29x%20%5C%5Cn_1%26%3Dx-T%5Calpha_t&plus;B%5Calpha_b%3D%28I-P_%7BTB%7D%29x%5Cend%7Baligned%7D%20%24%24)
 
-  Suppose ![](http://latex.codecogs.com/gif.latex?D_%7BMSD%7D%20%28x%29%3D%5Cfrac%7Bx%5ET%281-P_B%29%7D%7Bx%5ET%281-P_%7BTB%7D%29x%7D),When D is greater than a certain threshold η, then X is the target.
+  Suppose ![](http://latex.codecogs.com/gif.latex?D_%7BMSD%7D%28x%29%3D%5Cfrac%7Bx%5ET%281-P_B%20%29x%7D%7Bx%5ET%281-P_%7BTB%7D%29x%7D),When D is greater than a certain threshold η, then X is the target.
 
   That means we need to find a projection matrix p.
 
@@ -33,7 +33,7 @@ After comparison we can find:
 
 ![](http://latex.codecogs.com/gif.latex?%24%24%5Cbegin%7Baligned%7Dn_0%20%26%20%3D%28I-P_B%29x%5Cto%20x-A_b%5Calpha%27%20%5C%5Cn_1%26%3D%281-P_%7BTB%7D%20%29x%5Cto%20x-A%5Cgamma%5Cend%7Baligned%7D%20%24%24)
 
-Suppose ![](http://latex.codecogs.com/gif.latex?D_%7BMSD%7D%20%28x%29%3D%5Cfrac%7Bx%5ET%28x-A_b%5Calpha%27%29%7D%7Bx%5ET%28x-A%5Cgamma%29x%7D%29),When D is greater than a certain threshold η, then X is the target.
+Suppose ![](http://latex.codecogs.com/gif.latex?D_%7BMSD%7D%28x%29%3D%5Cfrac%7Bx%5ET%281-A_b%5Calpha%27%20%29x%7D%7Bx%5ET%281-A%5Cgamma%29x%7D),When D is greater than a certain threshold η, then X is the target.
 
 Then it is based on the ROC curve to compare different threshold effects, resulting in the final result.
 
