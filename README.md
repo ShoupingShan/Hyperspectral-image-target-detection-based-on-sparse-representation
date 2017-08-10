@@ -1,12 +1,11 @@
 
 ## Introduction
 
-Hyperspectral image target detection based on [sparse representation](https://en.wikipedia.org/wiki/Sparse_approximation),an effective method in Pattern Recognition.  
-
+Hyperspectral image target detection based on [sparse representation](https://en.wikipedia.org/wiki/Sparse_approximation),an effective method in Pattern Recognition.  Target detection
+aims to separate the specific target pixel from the various backgrounds by the use of known target
+pixels or anomalous properties.
 The proposed approach relies on the binary hypothesis model of an unknown sample induced by sparse representation.
-
 The sample can be sparsely represented by training samples from the background and target dictionary. The sparse vector
-
 in the model can be recovered by a greedy algorithm [OMP](https://en.wikipedia.org/wiki/Matching_pursuit) .
 
 ## Author
@@ -35,7 +34,9 @@ After comparison we can find:
 ![](http://latex.codecogs.com/gif.latex?%24%24%5Cbegin%7Baligned%7Dn_0%20%26%20%3D%28I-P_B%29x%5Cto%20x-A_b%5Calpha%27%20%5C%5Cn_1%26%3D%281-P_%7BTB%7D%20%29x%5Cto%20x-A%5Cgamma%5Cend%7Baligned%7D%20%24%24)
 
 Suppose ![](http://latex.codecogs.com/gif.latex?D_%7BMSD%7D%20%28x%29%3D%5Cfrac%7Bx%5ET%28x-A_b%5Calpha%27%29%7D%7Bx%5ET%28x-A%5Cgamma%29x%7D%29),When D is greater than a certain threshold η, then X is the target.
+
 Then it is based on the ROC curve to compare different threshold effects, resulting in the final result.
+
 However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.latex?%24x%5ET%20%28x-A_t%20%5Cgamma%29x%24) in practice.
 
 
@@ -68,7 +69,7 @@ However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.
 
       mat\detect.m
   > For SVM
-  
+
       svm\main.cpp
 ## Contact Us
   *shp395210@outlook.com*
