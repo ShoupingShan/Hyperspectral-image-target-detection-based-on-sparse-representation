@@ -11,7 +11,7 @@ in the model can be recovered by a greedy algorithm [OMP](https://en.wikipedia.o
 ## Author
   * [@ShoupingShan](https://github.com/ShoupingShan)
 
-## Theory
+## Theory (SMSD)
 
 The problem of target detection can be regarded as a competitive relationship of two hypotheses ![](http://latex.codecogs.com/gif.latex?%24H_0%24)(Background) and ![](http://latex.codecogs.com/gif.latex?%24H_1%24)(Target).
 
@@ -55,7 +55,7 @@ However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.
 ### Sparse Representation
 ![SR](http://thumbnail0.baidupcs.com/thumbnail/134418c291b3c0c089fa1f9d248e003c?fid=676888674-250528-301138876109000&time=1502294400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-HgvIEwZ%2F1PXMoubg6%2FzB1a7MsfE%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5125856103108996112&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
 ### SVM
-  ![SVM](http://thumbnail0.baidupcs.com/thumbnail/092d2cf20215013d362f4dd787ea454a?fid=676888674-250528-779354715831614&time=1502337600&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-2FbEHEYypxbyES4UKZU54XogVl4%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5137387434532715500&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)
+  ![SVM](http://thumbnail0.baidupcs.com/thumbnail/ae61d4fa64a1af9959423ef25adfd044?fid=676888674-250528-161904655768148&time=1502348400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-BLAcnivjLfejZQfaTMM7hjUCgkk%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5140608572431641589&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)
 
 |  |Positive|Negative|Totle|Accuracy|
 |:-:|:-----:|:------:|:---:|:------:|
