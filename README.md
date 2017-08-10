@@ -83,7 +83,10 @@ However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.
 
       svm\main.cpp
   > For Fisher_part
+  
       fisher/fisher.cpp
+  > For Fisher_all
+
       fisher/fisher_all.cpp
 ## Contact Us
   *shp395210@outlook.com*
