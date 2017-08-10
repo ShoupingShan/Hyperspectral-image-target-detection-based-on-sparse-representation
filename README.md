@@ -14,30 +14,29 @@ in the model can be recovered by a greedy algorithm [OMP](https://en.wikipedia.o
 
 ## Theory
 
-The problem of target detection can be regarded as a competitive relationship of two hypotheses $H_0$(Background) and $H_1$(Target).
+The problem of target detection can be regarded as a competitive relationship of two hypotheses ![](http://latex.codecogs.com/gif.latex?%24H_0%24)(Background) and ![](http://latex.codecogs.com/gif.latex?%24H_1%24)(Target).
 
-$$\begin{aligned}H_0 & =B\alpha_b+n       \\\\H_1&=T\alpha_t+B\alpha_b+n\end{aligned} $$
+![](http://latex.codecogs.com/gif.latex?%24%24%5Cbegin%7Baligned%7DH_0%20%26%20%3DB%5Calpha_b&plus;n%20%5C%5C%5C%5CH_1%26%3DT%5Calpha_t&plus;B%5Calpha_b&plus;n%5Cend%7Baligned%7D%20%24%24)
 
+  T and B are both matrices, their column vectors are divided into target and background subspace. ![](http://latex.codecogs.com/gif.latex?%24%5Calpha_t%24) and ![](http://latex.codecogs.com/gif.latex?%24%5Calpha_b%24) form the coefficient vectors of the coefficients, respectively. N denotes Gaussian random noise, [T,B]represents a cascade matrix of T and B.
 
-  T and B are both matrices, their column vectors are divided into target and background subspace. $\alpha_t$ and $\alpha_b$form the coefficient vectors of the coefficients, respectively. N denotes Gaussian random noise, [T,B]represents a cascade matrix of T and B.
+![](http://latex.codecogs.com/gif.latex?%24%24%5Cbegin%7Baligned%7Dn_0%20%26%20%3Dx-B%5Calpha_b%3D%28I-P_B%29x%20%5C%5Cn_1%26%3Dx-T%5Calpha_t&plus;B%5Calpha_b%3D%28I-P_%7BTB%7D%29x%5Cend%7Baligned%7D%20%24%24)
 
-
-  $$\begin{aligned}n_0 & =x-B\alpha_b=(I-P_B)x      \\n_1&=x-T\alpha_t+B\alpha_b=(I-P_{TB})x\end{aligned} $$
-  Suppose $D_MSD (x)=\frac{x^T (1-P_B)x}{x^T (1-P_{TB})x}$,When D is greater than a certain threshold η, then X is the target.
+  Suppose ![](http://latex.codecogs.com/gif.latex?D_%7BMSD%7D%20%28x%29%3D%5Cfrac%7Bx%5ET%281-P_B%29%7D%7Bx%5ET%281-P_%7BTB%7D%29x%7D),When D is greater than a certain threshold η, then X is the target.
 
   That means we need to find a projection matrix p.
 
   By the sparse representation of knowledge, it is known that the residual error of signal reconstruction can be expressed as:
 
+![](http://latex.codecogs.com/gif.latex?%24%24%5Cbegin%7Baligned%7Dn_0%27%20%26%20%3Dx-A_b%5Calpha%5C%5Cn_1%27%26%3Dx-A%5Cgamma%5Cend%7Baligned%7D%20%24%24)
 
-  $$\begin{aligned}n_0' & =x-A_b\alpha\\n_1'&=x-A\gamma\end{aligned} $$
+After comparison we can find:
 
+![](http://latex.codecogs.com/gif.latex?%24%24%5Cbegin%7Baligned%7Dn_0%20%26%20%3D%28I-P_B%29x%5Cto%20x-A_b%5Calpha%27%20%5C%5Cn_1%26%3D%281-P_%7BTB%7D%20%29x%5Cto%20x-A%5Cgamma%5Cend%7Baligned%7D%20%24%24)
 
-$$\begin{aligned}n_0 & =(I-P_B)x\to x-A_b\alpha'     \\n_1&=(1-P_{TB} )x\to x-A\gamma\end{aligned} $$
-
-Suppose $D_MSD (x)=\frac{x^T(x-A_b α')}{x^T(x-Aγ)x}$,When D is greater than a certain threshold η, then X is the target.
+Suppose ![](http://latex.codecogs.com/gif.latex?D_%7BMSD%7D%20%28x%29%3D%5Cfrac%7Bx%5ET%28x-A_b%5Calpha%27%29%7D%7Bx%5ET%28x-A%5Cgamma%29x%7D%29),When D is greater than a certain threshold η, then X is the target.
 Then it is based on the ROC curve to compare different threshold effects, resulting in the final result.
-However, it is better to amend Denominator as $x^T (x-A_t γ)x$ in practice.
+However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.latex?%24x%5ET%20%28x-A_t%20%5Cgamma%29x%24) in practice.
 
 
 ## Data
@@ -64,6 +63,12 @@ However, it is better to amend Denominator as $x^T (x-A_t γ)x$ in practice.
   * [VS2013](http://www.iplaysoft.com/vs2013.html)
   * [OpenCV 2.4.9](http://opencv.org/)
   * [Matlab r2016b](https://www.mathworks.com/)
+## How to run
+  > For Sparse Representation
 
+      mat\detect.m
+  > For SVM
+  
+      svm\main.cpp
 ## Contact Us
   *shp395210@outlook.com*
