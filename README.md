@@ -55,7 +55,7 @@ However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.
 ### Sparse Representation
 ![SR](http://thumbnail0.baidupcs.com/thumbnail/134418c291b3c0c089fa1f9d248e003c?fid=676888674-250528-301138876109000&time=1502294400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-HgvIEwZ%2F1PXMoubg6%2FzB1a7MsfE%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5125856103108996112&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
 ### SVM
-  ![SVM](http://thumbnail0.baidupcs.com/thumbnail/84d697b2c0bca97c195f87adea1d39ff?fid=676888674-250528-1069339338576912&time=1502330400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-r6X%2FNgfYAhB3cSq5YsYOUCUm8cQ%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5135319725655736071&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)
+  ![SVM](http://thumbnail0.baidupcs.com/thumbnail/092d2cf20215013d362f4dd787ea454a?fid=676888674-250528-779354715831614&time=1502337600&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-2FbEHEYypxbyES4UKZU54XogVl4%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5137387434532715500&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)
 
 ## ROC curve
   ![ROC](http://thumbnail0.baidupcs.com/thumbnail/8edd40996220e095e1e1825f0bd9cc3b?fid=676888674-250528-890559091439224&time=1502330400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-T4dYhf2kACwxpMPHiiBec5uUdas%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5135414757900587264&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
