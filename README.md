@@ -43,21 +43,21 @@ However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.
 ## Data
 
 ### San Diego hyperspectral dataset (400*400)
-![原图](http://thumbnail0.baidupcs.com/thumbnail/f4c39e9279e0072c408ac06258144ccd?fid=676888674-250528-990921214246117&time=1502294400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-K1Qgg76PoyqKY7MZVkB4X9IPP94%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5125653704072191132&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)
+![原图](http://thumbnail0.baidupcs.com/thumbnail/f4c39e9279e0072c408ac06258144ccd?fid=676888674-250528-990921214246117&time=1502370000&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-BBQwlN4fX5tQcB1J2gbsS2IErzo%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5146234590145591935&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
 
 ### GroundTruth (100*100)
-![GT](http://thumbnail0.baidupcs.com/thumbnail/84d697b2c0bca97c195f87adea1d39ff?fid=676888674-250528-1069339338576912&time=1502294400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-pqqwNpefzLfLIYsu1Sn5POLXoys%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5125773466591858797&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)
+![GT](http://thumbnail0.baidupcs.com/thumbnail/84d697b2c0bca97c195f87adea1d39ff?fid=676888674-250528-1069339338576912&time=1502370000&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-8sdu5M1GDbl%2Fj%2F8w8SLo6OMbsos%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5146234590145591935&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
 ## Rebuilt
 
   ### Target
-  ![Target](http://thumbnail0.baidupcs.com/thumbnail/6f12bd1f666c96b7a2d81ff67128acd5?fid=676888674-250528-403840802942145&time=1502330400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-d9959Tu%2Fq5X76vAhP7yDzsaUxaE%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5135414757900587264&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
+  ![Target](http://thumbnail0.baidupcs.com/thumbnail/6f12bd1f666c96b7a2d81ff67128acd5?fid=676888674-250528-403840802942145&time=1502370000&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-pOFu62BokaJjsD7bAob2QZTesdQ%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5146234590145591935&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
 
   ### Background
-  ![Background](http://thumbnail0.baidupcs.com/thumbnail/f22407fd5733172c52ccc02dd07a30a0?fid=676888674-250528-576378241897516&time=1502330400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-5u37f%2BwR3tKiI7Ywtn8ivPai%2B5w%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5135414757900587264&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
+  ![Background](http://thumbnail0.baidupcs.com/thumbnail/f22407fd5733172c52ccc02dd07a30a0?fid=676888674-250528-576378241897516&time=1502370000&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-bQnnb6QgLgxDwtaZLTULt2N5EYI%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5146234590145591935&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
 ## Detection
 
 ### Sparse Representation
-![SR](http://thumbnail0.baidupcs.com/thumbnail/134418c291b3c0c089fa1f9d248e003c?fid=676888674-250528-301138876109000&time=1502294400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-HgvIEwZ%2F1PXMoubg6%2FzB1a7MsfE%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5125856103108996112&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
+![SR](http://thumbnail0.baidupcs.com/thumbnail/134418c291b3c0c089fa1f9d248e003c?fid=676888674-250528-301138876109000&time=1502370000&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-31qTtKUnd1q5K%2Bw8sUqmL%2Bec%2BOo%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5146234590145591935&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
 
 ### SVM
   ![SVM](http://thumbnail0.baidupcs.com/thumbnail/ae61d4fa64a1af9959423ef25adfd044?fid=676888674-250528-161904655768148&time=1502348400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-BLAcnivjLfejZQfaTMM7hjUCgkk%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5140608572431641589&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)
@@ -76,7 +76,7 @@ However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.
     2. Using part of the data
 ![Part](http://thumbnail0.baidupcs.com/thumbnail/cf38d0d2e1b1301d6b8f4d11845b82da?fid=676888674-250528-738259958850869&time=1502348400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-aYzIFV%2B6h4LpoMIDh3bgHXNOcVQ%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5140435538473245919&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
 ## ROC curve
-  ![ROC](http://thumbnail0.baidupcs.com/thumbnail/8edd40996220e095e1e1825f0bd9cc3b?fid=676888674-250528-890559091439224&time=1502330400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-T4dYhf2kACwxpMPHiiBec5uUdas%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5135414757900587264&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
+  ![ROC](http://thumbnail0.baidupcs.com/thumbnail/8edd40996220e095e1e1825f0bd9cc3b?fid=676888674-250528-890559091439224&time=1502370000&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-GYSUTpvoPiwWc%2Bg7AhL0VtZaY48%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5146234590145591935&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
 ## Platform
   * [Win10](https://www.microsoft.com/zh-cn)
   * [VS2013](http://www.iplaysoft.com/vs2013.html)
