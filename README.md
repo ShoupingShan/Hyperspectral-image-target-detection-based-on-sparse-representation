@@ -41,21 +41,27 @@ However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.
 
 
 ## Data
+
 ### San Diego hyperspectral dataset (400*400)
 ![原图](http://thumbnail0.baidupcs.com/thumbnail/f4c39e9279e0072c408ac06258144ccd?fid=676888674-250528-990921214246117&time=1502294400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-K1Qgg76PoyqKY7MZVkB4X9IPP94%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5125653704072191132&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)
+
 ### GroundTruth (100*100)
 ![GT](http://thumbnail0.baidupcs.com/thumbnail/84d697b2c0bca97c195f87adea1d39ff?fid=676888674-250528-1069339338576912&time=1502294400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-pqqwNpefzLfLIYsu1Sn5POLXoys%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5125773466591858797&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)
 ## Rebuilt
+
   ### Target
   ![Target](http://thumbnail0.baidupcs.com/thumbnail/6f12bd1f666c96b7a2d81ff67128acd5?fid=676888674-250528-403840802942145&time=1502330400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-d9959Tu%2Fq5X76vAhP7yDzsaUxaE%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5135414757900587264&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
+
   ### Background
   ![Background](http://thumbnail0.baidupcs.com/thumbnail/f22407fd5733172c52ccc02dd07a30a0?fid=676888674-250528-576378241897516&time=1502330400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-5u37f%2BwR3tKiI7Ywtn8ivPai%2B5w%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5135414757900587264&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
 ## Detection
 
 ### Sparse Representation
 ![SR](http://thumbnail0.baidupcs.com/thumbnail/134418c291b3c0c089fa1f9d248e003c?fid=676888674-250528-301138876109000&time=1502294400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-HgvIEwZ%2F1PXMoubg6%2FzB1a7MsfE%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5125856103108996112&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
+
 ### SVM
   ![SVM](http://thumbnail0.baidupcs.com/thumbnail/ae61d4fa64a1af9959423ef25adfd044?fid=676888674-250528-161904655768148&time=1502348400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-BLAcnivjLfejZQfaTMM7hjUCgkk%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5140608572431641589&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)
+
 
 |  |Positive|Negative|Totle|Accuracy|
 |:-:|:-----:|:------:|:---:|:------:|
@@ -63,6 +69,7 @@ However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.
 |Test|57|9943|10000|0.9989|
 
 ### Fisher
+
     1. Using all of data
 ![All](http://thumbnail0.baidupcs.com/thumbnail/8d8ce8444ae605283cd97f2e12475ae8?fid=676888674-250528-829920072955848&time=1502348400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-O1dIBpflwHs6iHYriLiCTJGPT24%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5140435538473245919&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
 
