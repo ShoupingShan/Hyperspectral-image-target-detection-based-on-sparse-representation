@@ -63,7 +63,7 @@ However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.
   ![SVM](http://thumbnail0.baidupcs.com/thumbnail/ae61d4fa64a1af9959423ef25adfd044?fid=676888674-250528-161904655768148&time=1502348400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-BLAcnivjLfejZQfaTMM7hjUCgkk%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5140608572431641589&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)
 
 
-|  |Positive|Negative|Totle|Accuracy|
+|  |Positive|Negative|Total|Accuracy|
 |:-:|:-----:|:------:|:---:|:------:|
 |Train|37|6629|6666||
 |Test|57|9943|10000|0.9989|
