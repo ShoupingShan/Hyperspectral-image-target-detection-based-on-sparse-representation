@@ -46,23 +46,24 @@ However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.
 ![source](http://thumbnail0.baidupcs.com/thumbnail/d26037edf7bff9a61dabcfb54ebfa61b?fid=676888674-250528-178581789731721&time=1503115200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-5lHytGdqfGohW6i9EQngoiitgZs%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5346076110800793261&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
 
 ### GroundTruth (100*100)
-![GT](http://thumbnail0.baidupcs.com/thumbnail/84d697b2c0bca97c195f87adea1d39ff?fid=676888674-250528-1069339338576912&time=1503115200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-EgahHn8v0jUNQkhIQepdiJmdY7Q%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5346101656161517232&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)
+![DT](http://i1.bvimg.com/607553/72923bb1a6b0a913.png)
 ## Rebuilt
 
   ### Sparse coefficients
-  ![SC](http://thumbnail0.baidupcs.com/thumbnail/2404bbfe7663d2b71ce432fd46073218?fid=676888674-250528-910500821419148&time=1503115200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-6kTlurvcKPmS3ZV0RlOYEuq%2B9rQ%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5346132216478573241&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
+![SC](http://i1.bvimg.com/607553/7663d2b71ce432fd.png)
   ### Rebuild by dict_b and dict_t
   ![SC](http://thumbnail0.baidupcs.com/thumbnail/1fb9d4361d8a03d1f917af574da947cb?fid=676888674-250528-298416477942221&time=1503115200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-eirfTBqF0I5rZ9xQ2TwRtgrpKYE%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5346132216478573241&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
 ## Detection
 
 ### Sparse Representation
-![SR](http://thumbnail0.baidupcs.com/thumbnail/134418c291b3c0c089fa1f9d248e003c?fid=676888674-250528-558410542282547&time=1503115200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-PbYCu7QLHyscyjCLiSmexRGYj0U%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5346316537936453332&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)
+![SR_good](http://i4.bvimg.com/607553/91b3c0c089fa1f9d.png)
+![SR_bad](http://i1.bvimg.com/607553/94b04159f0a23ffe.png)
 ### Dual window
 ![DW](http://thumbnail0.baidupcs.com/thumbnail/ef779f8d0083d1157f9203f40e4eab51?fid=676888674-250528-883972315486660&time=1503115200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-xvyh74ZBslEzyx%2Fh572CjJch3Qk%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5346076110800793261&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
 ### Dual window with smooth
-![DWS](http://thumbnail0.baidupcs.com/thumbnail/c1cf93a915915a472f71992297ecbbb1?fid=676888674-250528-894802367746190&time=1503115200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-Fa2aE%2FUcZvZs1IbmEwR%2FqtV4eKw%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5346076110800793261&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
+![DWS](http://i1.bvimg.com/607553/15915a472f719922.png)
 ### SVM
-  ![SVM](http://thumbnail0.baidupcs.com/thumbnail/ae61d4fa64a1af9959423ef25adfd044?fid=676888674-250528-161904655768148&time=1503115200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-HuirWB2chOXUbc%2BN54jUbSo8xp4%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5346241090896561155&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
+![SVM](http://i1.bvimg.com/607553/64a1af9959423ef2.png)
 
 
 |  |Positive|Negative|Total|Accuracy|
@@ -73,7 +74,7 @@ However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.
 ### Fisher
 
     1. Using all of data
-![All](http://thumbnail0.baidupcs.com/thumbnail/8d8ce8444ae605283cd97f2e12475ae8?fid=676888674-250528-829920072955848&time=1503115200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-ieGBRYYkdLFwTzzC7CpyMJSka8Y%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5346241090896561155&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
+![All](http://i4.bvimg.com/607553/4ae605283cd97f2e.png)
 |  |Positive|Negative|Total|Accuracy|
 |:-:|:-----:|:------:|:---:|:------:|
 |Train|57|9943|10000||
