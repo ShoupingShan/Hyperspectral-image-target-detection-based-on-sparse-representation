@@ -78,7 +78,6 @@ However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.
 ![All](http://i4.bvimg.com/607553/4ae605283cd97f2e.png)
 
 
-![All](http://thumbnail0.baidupcs.com/thumbnail/8d8ce8444ae605283cd97f2e12475ae8?fid=676888674-250528-829920072955848&time=1503115200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-ieGBRYYkdLFwTzzC7CpyMJSka8Y%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5346241090896561155&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
 
 
 |  |Positive|Negative|Total|Accuracy|
