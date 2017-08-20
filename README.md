@@ -74,17 +74,29 @@ However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.
 ### Fisher
 
     1. Using all of data
+<<<<<<< HEAD
 ![All](http://i4.bvimg.com/607553/4ae605283cd97f2e.png)
+=======
+    
+![All](http://thumbnail0.baidupcs.com/thumbnail/8d8ce8444ae605283cd97f2e12475ae8?fid=676888674-250528-829920072955848&time=1503115200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-ieGBRYYkdLFwTzzC7CpyMJSka8Y%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5346241090896561155&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
+
+>>>>>>> 93cd6949d82cce73e984385d6fe555a2307f6c99
 |  |Positive|Negative|Total|Accuracy|
 |:-:|:-----:|:------:|:---:|:------:|
 |Train|57|9943|10000||
 |Test|57|9943|10000|0.9926|
+
+
     2. Using part of the data
+    
 ![Part](http://thumbnail0.baidupcs.com/thumbnail/cf38d0d2e1b1301d6b8f4d11845b82da?fid=676888674-250528-738259958850869&time=1503115200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-7HgTyBjvSFCjMKBDkqGLb5ZKc%2BM%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5346241090896561155&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
+
 |  |Positive|Negative|Total|Accuracy|
 |:-:|:-----:|:------:|:---:|:------:|
 |Train|37|6629|6666||
 |Test|57|9943|10000|0.985|
+
+
 ## ROC curve
   ![ROC](http://thumbnail0.baidupcs.com/thumbnail/41fa51838f822c5fc7515ddb9a818a06?fid=676888674-250528-703685863989540&time=1503115200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-uQoQM8ttqmuwqZLDh2V5wHLbeTA%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5346076110800793261&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
   ![ROC_all](http://thumbnail0.baidupcs.com/thumbnail/ee7e3ec17d1cee001d2354aaf31bd6d2?fid=676888674-250528-678793626515287&time=1503115200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-Y540ul7VxNRp5lyH3ss9pudZWN4%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5346076110800793261&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
