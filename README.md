@@ -43,7 +43,7 @@ However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.
 ## Data
 
 ### San Diego hyperspectral dataset (400*400)
-![source](http://thumbnail0.baidupcs.com/thumbnail/d26037edf7bff9a61dabcfb54ebfa61b?fid=676888674-250528-178581789731721&time=1503115200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-5lHytGdqfGohW6i9EQngoiitgZs%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5346076110800793261&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
+![SOURCE](http://i2.bvimg.com/607553/f7bff9a61dabcfb5.png)
 
 ### GroundTruth (100*100)
 ![DT](http://i1.bvimg.com/607553/72923bb1a6b0a913.png)
@@ -52,14 +52,14 @@ However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.
   ### Sparse coefficients
 ![SC](http://i1.bvimg.com/607553/7663d2b71ce432fd.png)
   ### Rebuild by dict_b and dict_t
-  ![SC](http://thumbnail0.baidupcs.com/thumbnail/1fb9d4361d8a03d1f917af574da947cb?fid=676888674-250528-298416477942221&time=1503115200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-eirfTBqF0I5rZ9xQ2TwRtgrpKYE%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5346132216478573241&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
+![SC_REBUILD](http://i2.bvimg.com/607553/1d8a03d1f917af57.png)
 ## Detection
 
 ### Sparse Representation
 ![SR_good](http://i4.bvimg.com/607553/91b3c0c089fa1f9d.png)
 ![SR_bad](http://i1.bvimg.com/607553/94b04159f0a23ffe.png)
 ### Dual window
-![DW](http://thumbnail0.baidupcs.com/thumbnail/ef779f8d0083d1157f9203f40e4eab51?fid=676888674-250528-883972315486660&time=1503115200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-xvyh74ZBslEzyx%2Fh572CjJch3Qk%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5346076110800793261&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
+![DW](http://i2.bvimg.com/607553/8204228f5158b228.png)
 ### Dual window with smooth
 ![DWS](http://i1.bvimg.com/607553/15915a472f719922.png)
 ### SVM
@@ -75,10 +75,9 @@ However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.
 
     1. Using all of data
 
-![All](http://i4.bvimg.com/607553/4ae605283cd97f2e.png)
+![ALL](http://i2.bvimg.com/607553/c3b4de029f062c80.png)
 
 
-![All](http://thumbnail0.baidupcs.com/thumbnail/8d8ce8444ae605283cd97f2e12475ae8?fid=676888674-250528-829920072955848&time=1503115200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-ieGBRYYkdLFwTzzC7CpyMJSka8Y%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5346241090896561155&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
 
 
 |  |Positive|Negative|Total|Accuracy|
@@ -89,7 +88,7 @@ However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.
 
     2. Using part of the data
 
-![Part](http://thumbnail0.baidupcs.com/thumbnail/cf38d0d2e1b1301d6b8f4d11845b82da?fid=676888674-250528-738259958850869&time=1503115200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-7HgTyBjvSFCjMKBDkqGLb5ZKc%2BM%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5346241090896561155&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
+![PART](http://i2.bvimg.com/607553/e3555f0638ddb117.png)
 
 |  |Positive|Negative|Total|Accuracy|
 |:-:|:-----:|:------:|:---:|:------:|
@@ -98,8 +97,8 @@ However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.
 
 
 ## ROC curve
-![POC](http://i1.bvimg.com/607553/8f822c5fc7515ddb.png)
-![ROC_all](http://thumbnail0.baidupcs.com/thumbnail/ee7e3ec17d1cee001d2354aaf31bd6d2?fid=676888674-250528-678793626515287&time=1503115200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-Y540ul7VxNRp5lyH3ss9pudZWN4%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5346076110800793261&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video)
+![ROC](http://i1.bvimg.com/607553/8f822c5fc7515ddb.png)
+![ROC_ALL](http://i2.bvimg.com/607553/7d1cee001d2354aa.png)
 ## Platform
   * [Win10](https://www.microsoft.com/zh-cn)
   * [VS2013](http://www.iplaysoft.com/vs2013.html)
