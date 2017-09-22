@@ -11,6 +11,16 @@ in the model can be recovered by a greedy algorithm [OMP](https://en.wikipedia.o
 ## Author
   * [@ShoupingShan](https://github.com/ShoupingShan)
 
+##   Bibliography
+
+ 1. **[Sub-space Matching](http://ieeexplore.ieee.org/abstract/document/5766028/)**
+    
+     *Chen Y, Nasrabadi N M, Tran T D. Hyperspectral image classification using dictionary-based sparse representation[J]. IEEE Transactions on Geoscience and Remote Sensing, 2011, 49(10): 3973-3985.*
+ 2. **[Dual Window](http://ieeexplore.ieee.org/abstract/document/5711635/)**
+    
+     *Chen Y, Nasrabadi N M, Tran T D. Sparse representation for target detection in hyperspectral imagery[J]. IEEE Journal of Selected Topics in Signal Processing, 2011, 5(3): 629-640.*
+  
+
 ## Theory (SMSD)
 
 The problem of target detection can be regarded as a competitive relationship of two hypotheses ![](http://latex.codecogs.com/gif.latex?%24H_0%24)(Background) and ![](http://latex.codecogs.com/gif.latex?%24H_1%24)(Target).
