@@ -60,9 +60,9 @@ However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.
 ## Rebuilt
 
   ### Sparse coefficients
-![SC](http://i1.bvimg.com/607553/7663d2b71ce432fd.png)
+![SC](./mat/local/ima/theta.png)
   ### Rebuild by dict_b and dict_t
-![SC_REBUILD](http://i2.bvimg.com/607553/1d8a03d1f917af57.png)
+![SC_REBUILD](./mat/ima/reb.png)
 ## Detection
 
 ### Sparse Representation
@@ -107,8 +107,8 @@ However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.
 
 
 ## ROC curve
-![ROC](http://i1.bvimg.com/607553/8f822c5fc7515ddb.png)
-![ROC_ALL](http://i2.bvimg.com/607553/7d1cee001d2354aa.png)
+![ROC](./mat/local/ima/local_smooth_new_roc.png)
+![ROC_ALL](./mat/local/ima/ROC_all.png)
 ## Platform
   * [Win10](https://www.microsoft.com/zh-cn)
   * [VS2013](http://www.iplaysoft.com/vs2013.html)
