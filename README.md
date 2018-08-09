@@ -62,18 +62,18 @@ However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.
   ### Sparse coefficients
 ![SC](./mat/local/ima/theta.png)
   ### Rebuild by dict_b and dict_t
-![SC_REBUILD](./mat/ima/reb.png)
+![SC_REBUILD](./mat/ima/rebuilt.png)
 ## Detection
 
 ### Sparse Representation
-![SR_good](http://i4.bvimg.com/607553/91b3c0c089fa1f9d.png)
-![SR_bad](http://i1.bvimg.com/607553/94b04159f0a23ffe.png)
+![SR_good](./mat/ima/Sparse.png)
+![SR_bad](./mat/ima/ima.png)
 ### Dual window
-![DW](http://i2.bvimg.com/607553/8204228f5158b228.png)
+![DW](./mat/ima/Dual_window.png)
 ### Dual window with smooth
 ![DWS](http://i1.bvimg.com/607553/15915a472f719922.png)
 ### SVM
-![SVM](http://i1.bvimg.com/607553/64a1af9959423ef2.png)
+![SVM](./mat/ima/SVM.png)
 
 
 |  |Positive|Negative|Total|Accuracy|
@@ -85,7 +85,7 @@ However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.
 
     1. Using all of data
 
-![ALL](http://i2.bvimg.com/607553/c3b4de029f062c80.png)
+![ALL](./mat/ima/fisher_all.png)
 
 
 
@@ -98,7 +98,7 @@ However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.
 
     2. Using part of the data
 
-![PART](http://i2.bvimg.com/607553/e3555f0638ddb117.png)
+![PART](./mat/ima/fisher_part.png)
 
 |  |Positive|Negative|Total|Accuracy|
 |:-:|:-----:|:------:|:---:|:------:|
