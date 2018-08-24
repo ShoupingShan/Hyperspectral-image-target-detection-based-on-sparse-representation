@@ -14,12 +14,12 @@ in the model can be recovered by a greedy algorithm [OMP](https://en.wikipedia.o
 ##   Bibliography
 
  1. **[Sub-space Matching](http://ieeexplore.ieee.org/abstract/document/5766028/)**
-    
+
      *Chen Y, Nasrabadi N M, Tran T D. Hyperspectral image classification using dictionary-based sparse representation[J]. IEEE Transactions on Geoscience and Remote Sensing, 2011, 49(10): 3973-3985.*
  2. **[Dual Window](http://ieeexplore.ieee.org/abstract/document/5711635/)**
-    
+
      *Chen Y, Nasrabadi N M, Tran T D. Sparse representation for target detection in hyperspectral imagery[J]. IEEE Journal of Selected Topics in Signal Processing, 2011, 5(3): 629-640.*
-  
+
 
 ## Theory (SMSD)
 
@@ -53,10 +53,19 @@ However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.
 ## Data
 
 ### San Diego hyperspectral dataset (400*400)
-![SOURCE](http://i2.bvimg.com/607553/f7bff9a61dabcfb5.png)
+![SOURCE](./mat/ima/main_map.png)
 
 ### GroundTruth (100*100)
-![DT](http://i1.bvimg.com/607553/72923bb1a6b0a913.png)
+![DT](./mat/ima/GT.png)
+
+## File
+  * `./Dict_build.m` dictionary build with part of target index
+  * `./Dict_build_all.m` dictionary build with all of the target index
+  * `detect.m` Basic algorithm to detect target
+  *  `./local/local_suitable.m` Dual_window method with smooth and suitable to adjust and plot
+  *  `./local/local_smooth.m` Dual_window method with smooth
+  * `./local/local_smooth.m` Dual_window method with smooth and plot results
+
 ## Rebuilt
 
   ### Sparse coefficients
@@ -71,7 +80,7 @@ However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.
 ### Dual window
 ![DW](./mat/ima/Dual_window.png)
 ### Dual window with smooth
-![DWS](http://i1.bvimg.com/607553/15915a472f719922.png)
+![DWS](./mat/local/ima/locald.png)
 ### SVM
 ![SVM](./mat/ima/SVM.png)
 
@@ -117,15 +126,21 @@ However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.
 ## How to run
   > For Sparse Representation
 
-      mat/detect.m
+      `mat/detect.m`
+
+      `mat/local/local_smooth.m`
+
+      `mat/local/local_smooth_plot.m`
+      
+      `mat/local/local_suitable.m`
   > For SVM
 
-      svm/main.cpp
+      `svm/main.cpp`
   > For Fisher_part
 
-      fisher/fisher.cpp
+      `fisher/fisher.cpp`
   > For Fisher_all
 
-      fisher/fisher_all.cpp
+      `fisher/fisher_all.cpp`
 ## Contact Us
   *shp395210@outlook.com*
