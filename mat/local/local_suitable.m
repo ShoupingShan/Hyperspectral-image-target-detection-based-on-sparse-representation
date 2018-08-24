@@ -1,15 +1,13 @@
 clear ;
 clc;
-cd D:/MATLABsave/Hyper/圣地亚哥机场数据/local
 load Sandiego.mat
 load PlaneGT.mat
 P=PlaneGT;
-%S=Sandiego(1:100,1:100,10:79);  %S是左上角100*100的部分，选取10~79共70个波段进行分析。
 [S_h,S_w]=size(P);
-get_target_index  %获取坐标点坐标
+get_target_index  %Get coordinate point coordinates
 
-%归一化
-S_=Sandiego(1:100,1:100,10:79);  %S是左上角100*100的部分，选取10~79共70个波段进行分析。
+%Normalized
+S_=Sandiego(1:100,1:100,10:79);  %S is the part of the upper left corner of 100*100, and a total of 70 bands of 10 to 79 are selected for analysis.
 S_temp=zeros(100,100,70);
 for i=1:100
     for j=1:100
@@ -34,17 +32,18 @@ end;
 S=floor(S);
 
 
-%% 调参
+%% Adjustment
 
-%%%%%%%%%%%%%%%%%%%%%%%%
-%选取第一个目标共target_num个像素点作为目标字典
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Select the first target with a total of target_num pixels as the target  dictionary%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 target_num=9;
-K=17;   %稀疏度
-Inner=9;   %内窗大小，可调节
-Outer=13; %外窗大小，可调节
+K=17;   %Sparsity
+Inner=9;   %Inner Window size , suitable
+Outer=13; %Outer Window size , suitable
 
 %% 
-T_index=1:target_sum;  %打乱字典
+T_index=1:target_sum;  %Disrupt the dictionary
 for i=1:target_sum
     temp=floor(rand(1)*target_sum+1);
     temp2=target_index(T_index(i),:);
@@ -59,7 +58,7 @@ for i=1:target_num
 end;
 
 %% %%%%%%%%%%%%%%%%
-%DUAL WINDOW设计
+%DUAL WINDOW  DESIGN
 %inner window 
 %outer window 
 %      ————————
@@ -79,11 +78,11 @@ elseif rem(Inner,2)==0
 end;
 new_H=Outer+99;
 len=(Outer-1)*0.5;
-b_num=Outer*Outer-Inner*Inner;   %背景字典数
-%边界扩充==镜像扩充
+b_num=Outer*Outer-Inner*Inner;   %Background dictionary number
+%Boundary expansion == mirror expansion
 S_expand=zeros(new_H,new_H,70);
 for i=1:len
-    S_expand((len+1):(100+len),i,:)=S(:,(len+2-i),:);   %镜像对称
+    S_expand((len+1):(100+len),i,:)=S(:,(len+2-i),:);   %Mirror symmetry
     S_expand((len+1):(100+len),i+len+100,:)=S(:,100-i,:);
 end;
  S_expand((len+1):(100+len),(len+1):(100+len),:)=S(:,:,:);
@@ -95,10 +94,10 @@ end;
 
 
 
-%% 逐点检测像素点
+%% Point-by-point detection of pixels
 
 Dict_b=zeros(70,b_num);   
-all_num=target_num+b_num;       %总体字典列数  
+all_num=target_num+b_num;       %Overall dictionary number
 Dict=zeros(70,all_num);
 Residual=zeros(100,100);
 z=zeros(70,1);
@@ -108,7 +107,7 @@ for i=len+1:100+len
     for j=len+1:100+len
        Dict_b=get_dict_b(i,j,S_expand,Inner,(Outer-1)*0.5);
        Dict(:,1:b_num)=Dict_b(:,:);
-       Dict(:,b_num+1:all_num)=Dict_t(:,:);   %完整的字典
+       Dict(:,b_num+1:all_num)=Dict_t(:,:);   %Complete dictionary
        x1=S_expand(i,j,:);
        x2=S_expand(i-1,j,:);
        x3=S_expand(i,j-1,:);
@@ -136,8 +135,8 @@ for i=len+1:100+len
        beta3=A3((1+b_num):all_num);
        beta4=A4((1+b_num):all_num);
        beta5=A5((1+b_num):all_num);
-       %计算r_b=sqrt(sum|1->5 ||(x_i-A_b*beta_i)||2)
-        %计算r_t=sqrt(sum|1->5 ||(x_i-A_t*alpha_i)||2)
+       %calculate r_b=sqrt(sum|1->5 ||(x_i-A_b*beta_i)||2)
+        %calculate r_t=sqrt(sum|1->5 ||(x_i-A_t*alpha_i)||2)
 
 %        b1=norm(x1-Dict_b*alpha1);
 %        b2=norm(x2-Dict_b*alpha2);
@@ -169,11 +168,11 @@ for i=len+1:100+len
        Residual(i-len,j-len)=Dx;
     end;
 end;
-    start_=min(min(Residual));end_=max(max(Residual)); step=(end_-start_)/2000;  %取值范围
+    start_=min(min(Residual));end_=max(max(Residual)); step=(end_-start_)/2000;  %Ranges
     num=floor((end_-start_)/step)+1;
     coord=zeros(num,2);
     coord_index=1;
-    MIN_DISTENCE=100000000;    %记录最优的阈值
+    MIN_DISTENCE=100000000;    %Record the optimal threshold
 for threshold=start_:step:end_
     P_compare=zeros(P_h,P_w);
     for i=1+len:S_h-len
@@ -183,10 +182,10 @@ for threshold=start_:step:end_
             end;
         end;
     end;
-    sum_TP=0;    %真阳性
-    sum_FP=0;    %伪阳性
-    sum_FN=0;    %伪阴性
-    sum_TN=0;    %真阴性
+    sum_TP=0;    %True positive
+    sum_FP=0;    %False positive
+    sum_FN=0;    %False negative
+    sum_TN=0;    %True negative
     for i=1+len:P_h-len
      for j=1+len:P_w-len
             if P_compare(i,j)==1&&PlaneGT(i,j)==1
@@ -200,9 +199,9 @@ for threshold=start_:step:end_
            end;
      end;
     end;
-    FPR=sum_FP/(sum_FP+sum_TN);    %伪阳性率
-    TPR=sum_TP/(sum_TP+sum_FN);    %真阳性率
-    distence=(FPR)^2+(1-TPR)^2;   %计算距离左上顶点的距离，距离最短的点可以认为是最好的阈值
+    FPR=sum_FP/(sum_FP+sum_TN);    %False positive rate
+    TPR=sum_TP/(sum_TP+sum_FN);    %True positive rate
+    distence=(FPR)^2+(1-TPR)^2;   %Calculate the distance from the upper left vertex, the shortest point can be considered the best threshold
     if distence<MIN_DISTENCE
         MIN_DISTENCE=distence;
         BEST_THRESHOLD=threshold;
@@ -211,15 +210,15 @@ for threshold=start_:step:end_
     coord(coord_index,2)=TPR;
     coord_index=coord_index+1;
 end;
-%% ROC曲线
+%% ROC curve
 X=coord(:,1);
 Y=coord(:,2);
 figure;
 
-plot(X,Y,'r'),xlabel('False alarm rate'),ylabel('Probability of detection'),title('ROC curve');%输出ROC曲线
+plot(X,Y,'r'),xlabel('False alarm rate'),ylabel('Probability of detection'),title('ROC curve');%Output ROC curve
 
     
-%% 画图
+%% Plot
 
   P_compare=zeros(S_h,S_w);
     for i=1+len:S_h-len

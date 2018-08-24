@@ -11,15 +11,15 @@
           n0=x'*(x-Dict_b*theta_b);
           n1=x'*(x-Dict_t*gamma);
           D=n0*(1/n1);
-          Collect(index)=D;   %分类结果response
+          Collect(index)=D;   %classfication result response
           index=index+1; 
       end;
     end;
-    start_=0.2;step=0.2;end_=10;   %取值范围
+    start_=0.2;step=0.2;end_=10;   % cycle Ranges
     num=(end_-start_)/step+1;
     coord=zeros(num,2);
     coord_index=1;
-    MIN_DISTENCE=1000000;    %记录最优的阈值
+    MIN_DISTENCE=1000000;    %Record the optimal threshold
 for threshold=start_:step:end_
     P_compare=zeros(P_h,P_w);
     for i=1:S_h
@@ -29,10 +29,10 @@ for threshold=start_:step:end_
             end;
         end;
     end;
-    sum_TP=0;    %真阳性
-    sum_FP=0;    %伪阳性
-    sum_FN=0;    %伪阴性
-    sum_TN=0;    %真阴性
+    sum_TP=0;    %True positive
+    sum_FP=0;    %False positive
+    sum_FN=0;    %False negative
+    sum_TN=0;    %True negative
     for i=1:P_h
      for j=1:P_w
             if P_compare(i,j)==1&&PlaneGT(i,j)==1
@@ -46,8 +46,8 @@ for threshold=start_:step:end_
            end;
      end;
     end;
-    FPR=sum_FP/(sum_FP+sum_TN);    %伪阳性率
-    TPR=sum_TP/(sum_TP+sum_FN);    %真阳性率
+    FPR=sum_FP/(sum_FP+sum_TN);    %False positive rate
+    TPR=sum_TP/(sum_TP+sum_FN);    %True positive rate
     distence=(FPR)^2+(1-TPR)^2;
     if distence<MIN_DISTENCE
         MIN_DISTENCE=distence;
@@ -61,7 +61,7 @@ end;
 X=coord(:,1);
 Y=coord(:,2);
 figure;
-plot(X,Y),xlabel('FPR'),ylabel('TPR');%输出ROC曲线
+plot(X,Y),xlabel('FPR'),ylabel('TPR');%Plot ROC curve
 
   P_compare=zeros(S_h,S_w);
     for i=1:S_h
@@ -72,12 +72,12 @@ plot(X,Y),xlabel('FPR'),ylabel('TPR');%输出ROC曲线
         end;
     end;
     
-%%画图
+%%Plot
 figure
 subplot(1,2,1);
-imshow(PlaneGT),title('标准图像');
+imshow(PlaneGT),title('Standard image');
 subplot(1,2,2);
-imshow(P_compare),title('检测结果');
+imshow(P_compare),title('Test results');
 
 
 

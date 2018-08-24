@@ -1,15 +1,13 @@
 clear ;
 clc;
-cd D:/MATLABsave/Hyper/圣地亚哥机场数据/local
 load Sandiego.mat
 load PlaneGT.mat
 P=PlaneGT;
-%S=Sandiego(1:100,1:100,10:79);  %S是左上角100*100的部分，选取10~79共70个波段进行分析。
 [S_h,S_w]=size(P);
-get_target_index
+get_target_index %Get coordinate point coordinates
 
-%归一化
-S_=Sandiego(1:100,1:100,10:79);  %S是左上角100*100的部分，选取10~79共70个波段进行分析。
+%Normalized
+S_=Sandiego(1:100,1:100,10:79);  %S is the part of the upper left corner of 100*100, and a total of 70 bands of 10 to 79 are selected for analysis.
 S_temp=zeros(100,100,70);
 for i=1:100
     for j=1:100
@@ -33,16 +31,15 @@ for i=1:100
 end;
 S=floor(S);
 
-%%%%%%%%%%%%%%%%%%%%%%%%
-%选取第一个目标共14个像素点作为目标字典
 
+%Select the first target to have a total of 14 pixels as the target  dictionary
 Dict_t=zeros(70,14);
 for i=1:14
     Dict_t(:,i)=S(target_index(i,1),target_index(i,1),:);  
 end;
 
 %%%%%%%%%%%%%%%%%%
-%DUAL WINDOW设计
+%DUAL WINDOW design
 %inner window 5*5
 %outer window 11*11
 %      ————————
@@ -54,7 +51,7 @@ end;
 %      ————————
 %%%%%%%%%%%%%%%%%%%
 
-%边界扩充
+%Boundary expansion
 % S_expand=zeros(112,112,70);
 % for i=1:6
 %     S_expand(7:106,i,:)=S(:,1,:);
@@ -81,8 +78,7 @@ end;
 S_expand(6:105,6:105,:)=S(:,:,:);
 
 
-
-%逐点检测像素点
+%% Point-by-point detection of pixels
 K=5;
 Dict_b=zeros(70,96);   %11*11-5*5
 Dict=zeros(70,110);
@@ -96,7 +92,7 @@ for i=6:105
     for j=6:105
        Dict_b=get_dict_b(i,j,S_expand);
        Dict(:,1:96)=Dict_b(:,:);
-       Dict(:,97:110)=Dict_t(:,:);   %完整的字典A
+       Dict(:,97:110)=Dict_t(:,:);   %Complete dictionary A
        A=[4*Dict,-Dict,-Dict,-Dict,-Dict; Dict,Z,Z,Z,Z; Z,Dict,Z,Z,Z; Z,Z,Dict,Z,Z; Z,Z,Z,Dict,Z; Z,Z,Z,Z,Dict];
        x1=S_expand(i,j,:);
        x2=S_expand(i-1,j,:);
@@ -135,20 +131,20 @@ for i=6:105
 %        gamma_b=gamma(1:96);
 %        gamma_t=gamma(97:110);
 %        y_b=Dict_b*gamma_b;
-%        r_b=norm(y_b-y);%恢复残差
+%        r_b=norm(y_b-y);  %Recovery residual
 %      % r_b=y'*y_b;
 %        y_t=Dict_t*gamma_t;
-%        r_t=norm(y_t-y);%恢复残差
+%        r_t=norm(y_t-y);  %Recovery residual
       %r_t=y'*y;
        Dx=r_b-r_t;
        Residual(i-5,j-5)=Dx;
     end;
 end;
-    start_=800;step=1;end_=2000;   %取值范围
+    start_=800;step=1;end_=2000;   %Ranges
     num=floor((end_-start_)/step)+1;
     coord=zeros(num,2);
     coord_index=1;
-    MIN_DISTENCE=100000000;    %记录最优的阈值
+    MIN_DISTENCE=100000000;    %Record the optimal threshold
 for threshold=start_:step:end_
     P_compare=zeros(P_h,P_w);
     for i=1:S_h
@@ -158,10 +154,10 @@ for threshold=start_:step:end_
             end;
         end;
     end;
-    sum_TP=0;    %真阳性
-    sum_FP=0;    %伪阳性
-    sum_FN=0;    %伪阴性
-    sum_TN=0;    %真阴性
+     sum_TP=0;    %True positive
+    sum_FP=0;    %False positive
+    sum_FN=0;    %False negative
+    sum_TN=0;    %True negative
     for i=1:P_h
      for j=1:P_w
             if P_compare(i,j)==1&&PlaneGT(i,j)==1
@@ -175,8 +171,8 @@ for threshold=start_:step:end_
            end;
      end;
     end;
-    FPR=sum_FP/(sum_FP+sum_TN);    %伪阳性率
-    TPR=sum_TP/(sum_TP+sum_FN);    %真阳性率
+    FPR=sum_FP/(sum_FP+sum_TN);    %False positive rate
+    TPR=sum_TP/(sum_TP+sum_FN);     %True positive rate
     distence=(FPR)^2+(1-TPR)^2;
     if distence<MIN_DISTENCE
         MIN_DISTENCE=distence;
@@ -186,12 +182,12 @@ for threshold=start_:step:end_
     coord(coord_index,2)=TPR;
     coord_index=coord_index+1;
 end;
-%ROC曲线
+%% ROCcurve
 X=coord(:,1);
 Y=coord(:,2);
 figure;
 
-plot(X,Y,'r'),xlabel('FPR'),ylabel('TPR'),title('ROC curve');%输出ROC曲线
+plot(X,Y,'r'),xlabel('FPR'),ylabel('TPR'),title('ROC curve');
 
   P_compare=zeros(S_h,S_w);
     for i=1:S_h
@@ -202,7 +198,7 @@ plot(X,Y,'r'),xlabel('FPR'),ylabel('TPR'),title('ROC curve');%输出ROC曲线
         end;
     end;
     
-%%画图
+%% Plot
 figure
 
 subplot(1,2,1);

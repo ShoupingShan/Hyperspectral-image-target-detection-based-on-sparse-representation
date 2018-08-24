@@ -14,31 +14,31 @@ tic
 theta3=omp_norm(x,Dict_b,K);
 x_r_3=Dict_b*theta3;
 toc
-%% »æÍ¼
+%% Plot rebuild
 figure(1);
 subplot(1,3,1);
-plot(x_r_1,'r');%»æ³öxµÄ»Ö¸´ÐÅºÅ
+plot(x_r_1,'r');%Draw the recovery signal of x
 hold on;
-plot(x,'k.-');%»æ³öÔ­ÐÅºÅx
+plot(x,'k.-');% x before
 hold off;
 legend('Recovery','Original')
-fprintf('\nDict»Ö¸´²Ð²î£º');
-norm(x_r_1-x)%»Ö¸´²Ð²î
+fprintf('\nDict Recovery residual£º');
+norm(x_r_1-x)%Recovery residual
 
 subplot(1,3,2);
-plot(x_r_2,'r');%»æ³öxµÄ»Ö¸´ÐÅºÅ
+plot(x_r_2,'r');%Draw the recovery signal of x
 hold on;
-plot(x,'k.-');%»æ³öÔ­ÐÅºÅx
+plot(x,'k.-');%Draw the original signal x
 hold off;
 legend('Recovery','Original')
-fprintf('\nDict_t»Ö¸´²Ð²î£º');
-norm(x_r_2-x)%»Ö¸´²Ð²î
+fprintf('\nDict_t Recovery residual£º');
+norm(x_r_2-x)%Recovery residual
 
 subplot(1,3,3);
-plot(x_r_3,'r');%»æ³öxµÄ»Ö¸´ÐÅºÅ
+plot(x_r_3,'r');%Draw the recovery signal of x
 hold on;
-plot(x,'k.-');%»æ³öÔ­ÐÅºÅx
+plot(x,'k.-');%Draw the original signal x
 hold off;
 legend('Recovery','Original')
-fprintf('\nDict_b»Ö¸´²Ð²î£º');
-norm(x_r_3-x)%»Ö¸´²Ð²î
+fprintf('\nDict_b Recovery residual£º');
+norm(x_r_3-x)%Recovery residual

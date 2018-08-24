@@ -1,4 +1,4 @@
-
+%% show main map(400*400) and used map(100*100)
  load Sandiego.mat
 X=Sandiego;
 Y=zeros(400,400);

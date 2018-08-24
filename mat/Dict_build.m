@@ -1,41 +1,68 @@
+%------------------------------------------------------------------------------------------
+%% Supervised dictionary construction based on part of hyperspectral target data
+%------------------------------------------------------------------------------------------
 clear all
 clc
-cd D:\MATLABsave\Hyper\圣地亚哥机场数据
 load PlaneGT.mat
 load Sandiego.mat
 P=PlaneGT;
 [P_h,P_w]=size(P);
-S=Sandiego(1:P_h,1:P_w,10:79); %裁剪原始图像为100*100,经过观察样本数据10~79波段信息较为良好
-[S_h,S_w,S_b]=size(S);
+S_=Sandiego(1:P_h,1:P_w,10:79); %The original image is cropped to 100*100, and the information of the sample data is better than that of the sample data.
+[S_h,S_w,S_b]=size(S_);
+
+%Normalized data
+S_temp=zeros(100,100,70);
+for i=1:100
+    for j=1:100
+        for k=1:70
+            S_temp(i,j,k)=S_temp(i,j,k)+S_(i,j,k);
+        end;
+    end;
+end;
+S_temp=S_temp/70;
+max_=max(max(S_temp));
+max_=max_(:);
+min_=min(min(S_temp));
+min_=min_(:);
+S=zeros(100,100,70);
+for i=1:100
+    for j=1:100
+        for k=1:70
+          S(i,j,:)=(S_temp(i,j,:)-min_(k))/(max_(k)-min_(k))*255;
+        end;
+    end;
+end;
+S=floor(S);
+
 sum=0;
-sum_t_ignore=0;   %记录被忽略的目标像素点
+sum_t_ignore=0;   %Record ignored target pixels
 sum_b_ignore=0;
 for i=1:P_h
     for j=1:P_w
-        S(i,j,:)=S(i,j,:)*0.0001;      %归一化数据
         if P(i,j)==1
             sum=sum+1;
             temp=rand(1);
-            if temp<0.667         %抽取目标像素的1/3作为字典
+            if temp<0.667         %Extract 1/3 of the target pixel as a dictionary
                 P(i,j)=2;
                 sum_t_ignore=sum_t_ignore+1;
             end;
         else
             temp=rand(1);
-            if temp<0.667         %抽取背景像素的1/3作为字典
-                P(i,j)=2;               %所有标记为2的像素点都不会被作为字典
+            if temp<0.667         %Extract 1/3 of the background pixels as a dictionary
+                P(i,j)=2;               %All pixels marked as 2 will not be used as a dictionary
                 sum_b_ignore=sum_b_ignore+1;
             end;
         end;
     end;
 end;
-Dict_t=zeros(S_b,sum-sum_t_ignore);  %目标字典
-Dict_b=zeros(S_b,P_h*P_w-sum-sum_b_ignore);  %背景字典
+Dict_t=zeros(S_b,sum-sum_t_ignore);  %Target dictionary
+Dict_b=zeros(S_b,P_h*P_w-sum-sum_b_ignore);  %Background dictionary
 index_t=1;
 index_b=1;
-%%%%%%%%%%%%%%%
-%  构造目标和背景字典%
-%%%%%%%%%%%%%%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Construct target and background dictionary %
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 for i=1:P_h
     for j=1:P_w
         if P(i,j)==1
@@ -47,9 +74,9 @@ for i=1:P_h
         end;
     end;
 end;
-Dict=zeros(S_b,P_h*P_w-sum_b_ignore-sum_t_ignore);  %全局字典
+Dict=zeros(S_b,P_h*P_w-sum_b_ignore-sum_t_ignore);  %Global dictionary
 Dict(:,1:sum-sum_t_ignore)=Dict_t(:,:);
-Dict(:,sum-sum_t_ignore+1:P_h*P_w-sum_b_ignore-sum_t_ignore)=Dict_b(:,:);  %级联
+Dict(:,sum-sum_t_ignore+1:P_h*P_w-sum_b_ignore-sum_t_ignore)=Dict_b(:,:);  %cascade
 
 
 
