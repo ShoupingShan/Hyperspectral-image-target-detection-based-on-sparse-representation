@@ -57,7 +57,7 @@ for threshold=start_:step:end_
     coord(coord_index,2)=TPR;
     coord_index=coord_index+1;
 end;
-%ROCÇúÏß
+%ROC curve
 X=coord(:,1);
 Y=coord(:,2);
 figure;
@@ -72,7 +72,7 @@ plot(X,Y),xlabel('FPR'),ylabel('TPR');%Plot ROC curve
         end;
     end;
     
-%%Plot
+%% Plot
 figure
 subplot(1,2,1);
 imshow(PlaneGT),title('Standard image');
