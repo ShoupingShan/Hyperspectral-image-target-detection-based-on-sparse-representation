@@ -126,21 +126,21 @@ However, it is better to amend Denominator as ![](http://latex.codecogs.com/gif.
 ## How to run
   > For Sparse Representation
 
-      `mat/detect.m`
+  `mat/detect.m`
 
-      `mat/local/local_smooth.m`
+  `mat/local/local_smooth.m`
 
-      `mat/local/local_smooth_plot.m`
-      
-      `mat/local/local_suitable.m`
+  `mat/local/local_smooth_plot.m`
+
+  `mat/local/local_suitable.m`
   > For SVM
 
-      `svm/main.cpp`
+  `svm/main.cpp`
   > For Fisher_part
 
-      `fisher/fisher.cpp`
+  `fisher/fisher.cpp`
   > For Fisher_all
 
-      `fisher/fisher_all.cpp`
+  `fisher/fisher_all.cpp`
 ## Contact Us
   *shp395210@outlook.com*
